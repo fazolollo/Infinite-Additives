@@ -1,16 +1,22 @@
 package com.fazolollo.infiniteadditives;
 
+import com.fazolollo.infiniteadditives.proxy.IProxy;
+import com.fazolollo.infiniteadditives.reference.Reference;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="InfiniteAdditives", name="Infinite Additives", version="1.7.2-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
 
 public class InfiniteAdditives
 {
-    @Mod.Instance("InfiniteAdditives")
+    @Mod.Instance(Reference.MOD_ID)
     public static InfiniteAdditives instance;
+
+    @SidedProxy(clientSide = "com.fazolollo.infiniteadditives.proxy.ClientProxy", serverSide = "com.fazolollo.infiniteadditives.proxy.ServerProxy")
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

@@ -2,11 +2,11 @@
 {
   "modid": "InfiniteAdditives",
   "name": "Infinite Additives",
-  "description": "testing",
+  "description": "Adding to Minecraft infinite additives!",
   "version": "1.0",
   "credits": "Created by fazolollo",
   "logoFile": "",
-  "mcversion": "1.7.2",
+  "mcversion": "1.7.10",
   "url": "http://www.test.com/",
   "updateUrl": "",
   "authorList": [

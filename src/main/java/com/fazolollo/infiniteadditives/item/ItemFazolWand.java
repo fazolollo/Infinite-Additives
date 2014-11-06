@@ -6,5 +6,6 @@ public class ItemFazolWand extends ItemIA
     {
         super();
         this.setUnlocalizedName("fazolWand");
+        this.maxStackSize = 1;
     }
 }

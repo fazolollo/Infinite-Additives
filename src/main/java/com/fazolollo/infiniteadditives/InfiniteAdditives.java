@@ -1,6 +1,7 @@
 package com.fazolollo.infiniteadditives;
 
 import com.fazolollo.infiniteadditives.handler.ConfigurationHandler;
+import com.fazolollo.infiniteadditives.init.ModBlocks;
 import com.fazolollo.infiniteadditives.init.ModItems;
 import com.fazolollo.infiniteadditives.proxy.IProxy;
 import com.fazolollo.infiniteadditives.reference.Reference;
@@ -29,6 +30,8 @@ public class InfiniteAdditives
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete!");
     }
